@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Image from "@/components/Image";
 import Faq from "./Faq";
 
-const CreateChatBotPage = () => {
+const MarketsPage = () => {
     return (
         <Layout>
             <div className="relative shrink-0 w-full h-64 max-h-850:h-56 bg-n-2 md:h-40 dark:bg-n-7">
@@ -36,4 +36,4 @@ const CreateChatBotPage = () => {
     );
 };
 
-export default CreateChatBotPage;
+export default MarketsPage;
