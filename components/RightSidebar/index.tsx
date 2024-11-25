@@ -6,26 +6,12 @@ import Adv from "./Adv";
 import { twMerge } from "tailwind-merge";
 
 type RightSidebarProps = {
-    typePage?: string;
+    typeAsset?: string;
     visible: boolean;
     onClick: () => void;
 };
 
-const RightSidebar = ({ typePage, visible, onClick }: RightSidebarProps) => {
-    const [type, setType] = useState<"built-in" | "custom">("built-in");
-
-    const typeTasks = [
-        {
-            title: "01",
-            active: type === "01",
-            onClick: () => setType("01"),
-        },
-        {
-            title: "02",
-            active: type === "02",
-            onClick: () => setType("02"),
-        },
-    ];
+const RightSidebar = ({ typeAsset, visible, onClick }: RightSidebarProps) => {
 
     return (
         <div
@@ -45,9 +31,7 @@ const RightSidebar = ({ typePage, visible, onClick }: RightSidebarProps) => {
                 />
             </button>
             <div className="flex flex-col grow p-4 overflow-y-auto scroll-smooth scrollbar-none">
-                <Tabs className="shrink-0 mb-4" items={typeTasks} medium />
-                <div className="mb-auto">
-                </div>
+                <div className="mb-auto"></div>
                 <Adv />
             </div>
         </div>

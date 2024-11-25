@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import MarketsPage from "@/templates/MarketsPage";
+import PageListPage from "@/templates/PageListPage";
 
 const Home: NextPage = () => {
-    return <MarketsPage />;
+    return <PageListPage />;
 };
 
 export default Home;
