@@ -7,7 +7,7 @@ import Head from "./Head";
 
 export const ShareAssetContext: any = createContext(false);
 
-type ChatProps = {
+type AssetProps = {
     background?: any;
     typeAsset?: string;
     children?: React.ReactNode;
