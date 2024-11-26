@@ -1,27 +1,18 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Image from "@/components/Image";
 import RightSidebar from "@/components/RightSidebar";
 import Icon from "@/components/Icon";
 import Head from "./Head";
 
-export const AssetContext: any = createContext(false);
-
 type AssetProps = {
     background?: any;
-    typeAsset?: string;
     children?: React.ReactNode;
 };
 
-const Asset = ({
-    background,
-    typeAsset,
-    children,
-}: AssetProps) => {
-    const isTablet = useMediaQuery({
-        query: "(max-width: 1179px)",
-    });
-    
+const Asset = ({ background, children }: AssetProps) => {
+    const isTablet = useMediaQuery({ query: "(max-width: 1179px)" });
+
     const [visible, setVisible] = useState(true);
 
     return (
@@ -61,7 +52,6 @@ const Asset = ({
                     </div>
                 </div>
                 <RightSidebar
-                    typeAsset={typeAsset}
                     visible={visible}
                     onClick={() => setVisible(isTablet ? true : false)}
                 />

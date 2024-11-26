@@ -11,8 +11,8 @@ type ModalProps = {
     onClose: () => void;
     initialFocus?: any;
     children: React.ReactNode;
-    video?: boolean;
-    videoPlayer?: boolean;
+    connect?: boolean;
+    wallet?: boolean;
 };
 
 const Modal = ({
@@ -23,8 +23,8 @@ const Modal = ({
     onClose,
     initialFocus,
     children,
-    video,
-    videoPlayer,
+    connect,
+    wallet,
 }: ModalProps) => {
     return (
         <Transition show={visible} as={Fragment}>
@@ -59,11 +59,11 @@ const Modal = ({
                     <Dialog.Panel
                         className={twMerge(
                             `relative z-10 max-w-[48rem] w-full m-auto bg-n-1 rounded-[1.25rem] shadow-modal md:rounded-xl dark:bg-n-6 ${
-                                video
-                                    ? "max-w-[64rem] aspect-video bg-n-7 overflow-hidden"
+                                connect
+                                    ? "max-w-[64rem] aspect-connect bg-n-7 overflow-hidden"
                                     : ""
                             } ${
-                                videoPlayer
+                                wallet
                                     ? "max-w-[64rem] bg-n-7 overflow-hidden"
                                     : ""
                             } ${classWrap}`

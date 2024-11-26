@@ -6,12 +6,12 @@ import Adv from "./Adv";
 import { twMerge } from "tailwind-merge";
 
 type RightSidebarProps = {
-    typeAsset?: string;
     visible: boolean;
     onClick: () => void;
 };
 
-const RightSidebar = ({ typeAsset, visible, onClick }: RightSidebarProps) => {
+
+const RightSidebar = ({ visible, onClick }: RightSidebarProps) => {
 
     return (
         <div

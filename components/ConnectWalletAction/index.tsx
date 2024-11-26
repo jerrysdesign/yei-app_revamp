@@ -3,7 +3,6 @@ import { Dialog, Transition } from "@headlessui/react";
 import Icon from "@/components/Icon";
 import Image from "@/components/Image";
 import WalletList from "./WalletList";
-// import Connecting from "./Connecting";
 
 import { walletList } from "@/constants/wallets";
 
