@@ -12,7 +12,7 @@ type LeftSidebarProps = {
     visible: boolean;
 };
 
-const LeftSidebar = ({ onClick, visible }: LeftSidebarProps) => {
+const Layout__LeftSidebar = ({ onClick, visible }: LeftSidebarProps) => {
     const [activeId, setActiveId] = useState<any>("0");
     const pathname = usePathname();
     const router = useRouter();
@@ -102,4 +102,4 @@ const LeftSidebar = ({ onClick, visible }: LeftSidebarProps) => {
     );
 };
 
-export default LeftSidebar;
+export default Layout__LeftSidebar;

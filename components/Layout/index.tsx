@@ -1,6 +1,6 @@
 import { useState } from "react";
-import LeftSidebar from "@/components/LeftSidebar";
-import Header from "@/components/Header";
+import Layout__LeftSidebar from "@/components/Layout__LeftSidebar";
+import Layout__Header from "@/components/Layout__Header";
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -15,13 +15,13 @@ const Layout = ({ children }: LayoutProps) => {
                 visible ? "pl-64 2xl:pl-20 md:pl-0" : "pl-20 md:pl-0"
             }`}
         >
-            <LeftSidebar
+            <Layout__LeftSidebar
                 visible={visible}
                 onClick={() => setVisible(!visible)}
             />
             <div className="flex py-6 h-screen h-screen-ios md:py-0">
                 <div className="relative flex flex-col grow max-w-full pt-16 bg-n-1 rounded-xl dark:bg-n-6 overflow-y-auto scroll-smooth scrollbar-none md:rounded-none">
-                    <Header
+                    <Layout__Header
                         visible={visible}
                         onClick={() => setVisible(!visible)}
                     />

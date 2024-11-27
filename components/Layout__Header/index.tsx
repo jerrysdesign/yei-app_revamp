@@ -7,12 +7,12 @@ import Profile from "./Profile";
 
 import { mainMenuList } from "@/constants/navigation";
 
-type HeaderProps = {
+type Layout__HeaderProps = {
     visible: boolean;
     onClick: () => void;
 };
 
-const Header = ({ visible, onClick }: HeaderProps) => {
+const Layout__Header = ({ visible, onClick }: Layout__HeaderProps) => {
     return (
         <div className="absolute top-0 left-0 right-0 z-10 flex items-center h-16 pl-2 pr-4 border-b border-n-3 bg-n-1 rounded-t-xl md:justify-between md:px-3 dark:bg-n-6 dark:border-n-5 md:fixed md:z-30 md:rounded-none">
             <div className="flex flex-row">
@@ -35,4 +35,4 @@ const Header = ({ visible, onClick }: HeaderProps) => {
     );
 };
 
-export default Header;
+export default Layout__Header;

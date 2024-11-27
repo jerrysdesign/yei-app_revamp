@@ -6,12 +6,36 @@ const items = [
         url: "/",
     },
     {
+        title: "Markets",
+        url: "/markets",
+    },
+    {
         title: "Market item",
         url: "/market-item",
     },
     {
-        title: "Markets",
-        url: "/markets",
+        title: "Portfolio",
+        url: "/portfolio",
+    },
+    {
+        title: "Points",
+        url: "/points",
+    },
+    {
+        title: "Bridge",
+        url: "/bridge",
+    },
+    {
+        title: "Bridge Q & A",
+        url: "/bridge/qa",
+    },
+     {
+        title: "Bridge Tx",
+        url: "/bridge/tx",
+    },
+    {
+        title: "Points",
+        url: "/points",
     },
 ];
 

@@ -1,16 +1,16 @@
 "use client";
 
 import Layout from "@/components/Layout";
-import Asset from "@/components/Asset";
+import Bridge from "@/components/Bridge";
 
 const MarketItemPage = () => {
     return (
         <Layout>
-            <Asset background="/images/bg-03.jpg">
+            <Bridge background="/images/bg-01.jpg">
                 <div className="h-screen">
-                    <div className="flex p-8 border-t border-n-3 md:px-5 dark:border-n-5">123</div>
+                    <h2>Bridge</h2>
                 </div>
-            </Asset>
+            </Bridge>
         </Layout>
     );
 };
